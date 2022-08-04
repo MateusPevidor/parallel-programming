@@ -1,0 +1,25 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+// RWTexture2D<float4> Result;
+
+float k;
+float nThreads;
+
+RWStructuredBuffer<int> result;
+StructuredBuffer<int> numbers;
+
+[numthreads(1,1,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    int index = id.x * k;
+
+    int sum = 0;
+    for (int i = index; i < index + k; i++) {
+        sum += numbers[i];
+    }
+
+    result[id.x] = sum;
+}
