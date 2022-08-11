@@ -232,12 +232,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841794793}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de46ad98cb98d5e49a1c698996e4e67a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   computeShader: {fileID: 7200000, guid: 613511616b88c2141b8c69ab5cff93c1, type: 3}
+  startTime: 0
+  endTime: 0
 --- !u!4 &841794795
 Transform:
   m_ObjectHideFlags: 0
@@ -266,3 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   computeShader: {fileID: 7200000, guid: fa1eec3f890d81245afb0fbb22ed8425, type: 3}
+  startTime: 0
+  endTime: 0
+  size: 128
+  nThreads: 8
