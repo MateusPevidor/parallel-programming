@@ -217,6 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 841794795}
   - component: {fileID: 841794794}
+  - component: {fileID: 841794796}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -231,7 +232,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841794793}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de46ad98cb98d5e49a1c698996e4e67a, type: 3}
   m_Name: 
@@ -252,3 +253,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &841794796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841794793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c848849f45ae42d44aabd05e22e7dd5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  computeShader: {fileID: 7200000, guid: fa1eec3f890d81245afb0fbb22ed8425, type: 3}
